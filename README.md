@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ScreenShot UNNES Official Landing Page
+> *"Write, Camera, Action, Semangat Berkarya!!"*
 
-## Getting Started
+Official landing page untuk **ScreenShot HIMA ILKOM UNNES** (*Multimedia & Journalistic of Computer Science*) — komunitas otonom mahasiswa Ilmu Komputer Universitas Negeri Semarang yang berfokus pada fotografi, sinematografi, desain komunikasi visual (DKV), dan reportase jurnalistik kampus.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🎨 Konsep Desain & Referensi Stitch
+
+Website ini mengusung estetika **Contemporary Neo-Studio / Kinetic Lab Minimal** yang dirancang melalui Google Stitch:
+* **Project Stitch**: `Remix of ScreenShot UNNES Landing Page` (ID: `5740034972268609710`)
+* **Warna Utama**:
+  * Canvas: `#EDEBDD` (*Warm Editorial Paper*)
+  * Brand Crimson: `#930000` (Aksen resmi ScreenShot)
+  * Darkroom / Banner: `#171614` / `#1A1917`
+  * Hairline Borders: `#DDD8C5`
+* **Tipografi**:
+  * Headings: `Plus Jakarta Sans` (Weight: 700 & 800)
+  * Body: `Hanken Grotesk`
+  * Badges & Data: `JetBrains Mono`
+
+---
+
+## 🏗️ Struktur Arsitektur Komponen
+
+Halaman utama (`app/page.tsx`) tersusun atas 7 modul komponen yang saling terhubung secara reaktif:
+
+```
+app/page.tsx
+├── 1. Navbar.tsx        (Sticky Glassmorphism, [ONLINE] Live Status, Active Scroll Tracker)
+├── 2. Hero.tsx          (Batch Badge, Display Headline, Metric Bar Ticker, Dual CTA)
+├── 3. About.tsx         (Visi Misi, Big Dark Banner, Floating Polaroids)
+├── 4. Organization.tsx   (Leadership BPH, Animated SVG Tree Nodes, 4 Kartu Divisi, Detail Modal)
+├── 5. Activities.tsx     (Asymmetric 12-Col Grid, Category Filter Tabs, Lightbox Preview)
+├── 6. Recruitment.tsx   (Scattered Polaroid Collage Physics, Application Modal, Hub Kontak)
+└── 7. Footer.tsx        (Identitas Afiliasi HIMA ILKOM, Social Badges, Scroll to Top)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 👥 Pembagian Tugas Tim (50 / 50)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Pengembang | Porsi | Cakupan Komponen | File Implementasi |
+|---|---|---|---|
+| **Dimas** | 50% (Bagian Atas) | Setup Global, TopNavbar, Hero Section, Tentang Kami | `components/Navbar.tsx`, `components/Hero.tsx`, `components/About.tsx` |
+| **Lutfi** | 50% (Bagian Bawah) | Struktur Organisasi (Tree), Galeri Kegiatan, Recruitment Hub, Footer | `components/Organization.tsx`, `components/Activities.tsx`, `components/Recruitment.tsx`, `components/Footer.tsx` |
 
-## Learn More
+Untuk detail lengkap pembagian tugas teknis dan kontrak antar bagian, lihat [tugas.md](tugas.md).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Indeks Dokumen Proyek
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* 📋 [PRD.md](PRD.md) — *Product Requirements Document* resmi (Target Audiens, KPIs, FR, NFR, Roadmap)
+* 🎨 [DESIGN.md](DESIGN.md) — Desain Sistem Resmi (Color Tokens, Typography Scale, Spacing, Do's & Don'ts)
+* 🤝 [tugas.md](tugas.md) — Matriks Pembagian Kerja Tim & Interface Contract
+* 🏷️ [types/index.ts](types/index.ts) — Definisi tipe data bersama TypeScript
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Memulai Pengembangan
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. Prasyarat
+* Node.js versi 20+
+* npm / yarn / pnpm
+
+### 2. Instalasi Dependensi
+```bash
+npm install
+```
+
+### 3. Menjalankan Server Pengembangan
+```bash
+npm run dev
+```
+Buka browser di [http://localhost:3000](http://localhost:3000).
+
+### 4. Build Produksi
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 📍 Sekretariat & Kontak Resmi
+* **Alamat**: Gedung PKM FMIPA UNNES, Kampus Sekaran, Gunungpati, Kota Semarang 50229
+* **Email**: [screenshot@unnes.ac.id](mailto:screenshot@unnes.ac.id)
+* **WhatsApp**: +62 813-9102-8767
+* **Afiliasi**: Himpunan Mahasiswa Ilmu Komputer (HIMA ILKOM) Universitas Negeri Semarang
+
+&copy; 2026 ScreenShot UNNES. All rights reserved.

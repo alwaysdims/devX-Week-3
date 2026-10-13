@@ -24,6 +24,10 @@ export interface DivisionItem {
   description: string;
   skills: string[];
   icon: string;
+  image?: string;
+  tools?: string[];
+  head?: string;
+  focus?: string;
 }
 
 export interface ActivityItem {
@@ -33,4 +37,17 @@ export interface ActivityItem {
   description: string;
   image: string;
   batchOrDate: string;
+  division?: string;
+  badgeText?: string;
+  format?: string;
 }
+
+export interface LeaderItem {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  period: string;
+  quote?: string;
+}
+
