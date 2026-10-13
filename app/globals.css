@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #930000;
+  --color-primary-hover: #7a0000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #680000;
+  --color-on-primary-container: #ffb4a8;
+  --color-secondary: #930000;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f0eee0;
+  
+  --color-surface-canvas: #edebdd;
+  --color-surface-card: #ffffff;
+  --color-surface-card-warm: #fbf9ee;
+  --color-surface-container: #e5e3d5;
+  --color-surface-container-low: #f6f4e6;
+  --color-surface-container-high: #e2dfc9;
+  
+  --color-border-subtle: #ddd8c5;
+  --color-border-warm: #ddd8c5;
+  --color-outline-variant: #d0cbb5;
+  --color-outline: #8f706b;
+  
+  --color-on-surface: #1c1c14;
+  --color-on-surface-variant: #5b403c;
+  --color-darkroom: #1a1917;
+  --color-cta-banner: #171614;
+
+  --font-heading: var(--font-plus-jakarta-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: var(--font-plus-jakarta-sans), var(--font-hanken-grotesk), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #edebdd;
+  color: #1c1c14;
+  font-family: var(--font-body);
+}
