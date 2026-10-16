@@ -42,6 +42,33 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    const targetId = href.replace("#", "");
+    if (targetId === "beranda") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.history.pushState(null, "", href);
+      return;
+    }
+
+    const elem = document.getElementById(targetId);
+    if (elem) {
+      const navHeight = 64;
+      const elementPosition = elem.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - navHeight;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+      window.history.pushState(null, "", href);
+    }
+  };
+
   return (
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-200 border-b ${scrolled
@@ -52,7 +79,11 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-full px-6 md:px-12 max-w-7xl mx-auto h-16">
         {/* Left: Brand Logo & Status Indicator */}
         <div className="flex-1 flex items-center justify-start gap-3">
-          <Link href="#beranda" className="flex items-center">
+          <Link
+            href="#beranda"
+            onClick={(e) => handleNavClick(e, "#beranda")}
+            className="flex items-center"
+          >
             <div className="relative h-9 md:h-10 w-36 md:w-44 flex items-center">
               <Image
                 src="/logo.png"
@@ -76,6 +107,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className={`relative font-heading text-sm py-1 font-semibold transition-colors duration-150 ${isActive
                   ? "text-primary"
                   : "text-on-surface-variant hover:text-primary"
@@ -94,6 +126,7 @@ export default function Navbar() {
         <div className="flex-1 flex items-center justify-end gap-2">
           <Link
             href="#kontak"
+            onClick={(e) => handleNavClick(e, "#kontak")}
             className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary text-white font-heading text-sm font-semibold hover:bg-primary-hover hover:-translate-y-0.5 transition-all duration-150 active:scale-95 shadow-sm"
           >
             <span>Join Us</span>
@@ -141,7 +174,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className={`block font-heading text-sm font-semibold py-1.5 transition-colors ${isActive ? "text-primary font-bold pl-2 border-l-2 border-primary" : "text-on-surface hover:text-primary"
                   }`}
               >
@@ -152,7 +185,7 @@ export default function Navbar() {
           <div className="pt-2">
             <Link
               href="#kontak"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => handleNavClick(e, "#kontak")}
               className="flex w-full items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg bg-primary text-white font-heading text-sm font-semibold hover:bg-primary-hover active:scale-98 transition-transform"
             >
               <span>Join Us — Daftar Anggota</span>
