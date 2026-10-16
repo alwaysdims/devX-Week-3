@@ -156,7 +156,7 @@ export default function Recruitment() {
             onClick={(e) => e.stopPropagation()}
             style={{
               backgroundImage:
-                "radial-gradient(circle at 10% 15%, rgba(167, 243, 208, 0.4) 0%, transparent 45%), radial-gradient(circle at 95% 55%, rgba(110, 231, 183, 0.45) 0%, transparent 50%)",
+                "radial-gradient(circle at 10% 15%, rgba(147, 0, 0, 0.08) 0%, transparent 45%), radial-gradient(circle at 95% 55%, rgba(147, 0, 0, 0.12) 0%, transparent 50%)",
             }}
           >
             <button
@@ -180,7 +180,7 @@ export default function Recruitment() {
                 href="https://www.instagram.com/screenshotilkom"
                 target="_blank"
                 rel="noreferrer"
-                className="font-bold text-[#134E4A] hover:underline"
+                className="font-bold text-primary hover:underline"
               >
                 @screenshotilkom
               </a>{" "}
