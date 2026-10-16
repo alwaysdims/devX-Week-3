@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="relative h-10 md:h-12 w-48">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqdanmFx5UGWn2xDfvKMV3wzow8q0AE9WS04pZXz6eN4f5bqXKaBceA6ZfzX0NwwfnS6kkwJLTe0F6lr9a7KVEUQumk6lSX5chfzCGwxidS2J8WSFt_IOeAZ2UR8o8OinUZEJvVSglQFn7zjDpgdbbqVXKdCQ_GC4hBqf9ah0UQU5EoCqcBnoU9N4KYdckQxfTNWjjR-Spvb9HZ6tS5ucpfDgk0SSlypqcpSLfX3lckY-wBNhNy6Nwi_vdKuEP4X5VfiU"
+                  src="/logo.png"
                   alt="ScreenShot Logo"
                   fill
                   sizes="192px"
@@ -31,10 +31,6 @@ export default function Footer() {
               fotografi, sinematografi, desain grafis, dan cerita bermakna.
             </p>
 
-            <div className="font-mono text-xs text-primary font-semibold flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-primary" />
-              <span>Komunitas Otonom HIMA ILKOM UNNES</span>
-            </div>
           </div>
 
           {/* Col 2: Navigation Links */}

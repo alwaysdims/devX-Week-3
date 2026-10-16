@@ -13,7 +13,7 @@ const ACTIVITIES: ActivityItem[] = [
     description:
       "Wadah karya kreatif original anggota ScreenShot, dari foto, visual grafis, hingga tulisan jurnalistik.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA_-QKusmyCF0_faf4wBC1_ebrCvAmWoCYFb_CulnlWy_FgUOyYuSheRJYZQsEMADVkyFYEwFcaEFUbAoV7XN--JMZjPwu9R0EEwpjnLyWOKyoHl_qXbBqsnHd3kO6MGAiUlzRLNFCY8l7UpySWJsra4z6QcfqbzNf77FLbc04kZf0uWMvo9YwsjkeYE_BmSvd5AoZmFJ2oD9KAM0XHP40a4Gj_grPiz-AcOX5rpcuaHMMJhp0LV5smCA",
+      "/kegiatan/vibe_up.webp",
     batchOrDate: "BATCH // 2026",
     division: "Divisi DKV & Jurnalistik",
     format: "Edisi Mingguan",
@@ -26,7 +26,7 @@ const ACTIVITIES: ActivityItem[] = [
     description:
       "Sesi wawancara spontan ke narasumber acak di ruang publik dan kampus, mengemas opini publik jadi konten video dan visual yang segar serta komunikatif.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDie0gUrt2CtGgtzBQcSKBOrnbctGZlYhgAZx_wWXdXcFh9yUR0Cjemm6o1su8LobYKHQpIYS5NnlIxdzVpoWfcY4GrL2UZOp9bKPu0L43EoecR3YCLAldhk6Br5Wc7OXJEMLt2VRURKjTKBXRl0C4SkiN--HJDdHc6QcszNDztFuBnac772rxmIHRc4oHeifNOHldzTEjPjM_qH50b5tlr8UWFGmI2xYy5gJcm-gFwIiiuaNT9T32u6A",
+      "/kegiatan/sidak_kata.webp",
     batchOrDate: "REELS // TIKTOK",
     division: "Liputan Lapangan & Multimedia",
     format: "Format Reels & TikTok",
@@ -39,7 +39,7 @@ const ACTIVITIES: ActivityItem[] = [
     description:
       "Dokumentasi visual dan reportase jurnalistik agenda strategis di dalam maupun luar civitas Ilmu Komputer UNNES seperti Jemput Maba.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDLxq8SYpQ988jK9BANx6YEtIel4l6Bj6HdwOGAGHu9XU0hjY3yUYliUIJJd0UXHpvWLAvT43Dtldnta3ZhBxfqugYl-jWy7b2Ug-cWZ2i4TzS3frhKZbbXF6vwNug1azigm8h9-V6vd7rryTBd1X1D1SNLeppRt3ScrksHFkjvBNir9jHY-nSiZPh0w2iqWD_Nc1EzTdHVSveuFFDKK3wH6h2bLTAHqW-G8ci1k4KbxgXXIBhc2-DA2A",
+      "/kegiatan/jemput_maba.webp",
     batchOrDate: "EVENT // COVERAGE",
     division: "Divisi Jurnalistik & Fotosin",
     format: "Warta Visual",
@@ -51,8 +51,7 @@ const ACTIVITIES: ActivityItem[] = [
     badgeText: "Peluncuran Akbar 2026",
     description:
       "Perkenalan fungsionaris periode 2026 sekaligus peluncuran identitas visual resmi ScreenShot yang baru diiringi semangat kolaborasi sinematografi dan jurnalistik.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJdFCw62H7749y1SAD2vuPpJn5bRkvgpcX1w3j6w16pEv1fH5eQxyi_BFH2_p6E6XJSSlZsBRTZ7QHmvWNuQokDWojxNUndnj5sLin3I67AZ0bsIg-wK2wsqVyrnovi3ezDp_T170UMmPOuG-24RU0THxih7J7WcvfR7F8hFHcDDjDvRxHSNZjGdU25O7_BSIRu6TB3I50Qk5PmL4HAQHUmk-W-8lkJGOnrioXr7dBDRdenRJ3U8UTDA",
+    image: "/kegiatan/grand_launching.webp",
     batchOrDate: "MILESTONE // 2026",
     division: "Semua Divisi Kepengurusan",
     format: "Official Milestone",
@@ -86,12 +85,6 @@ export default function Activities() {
       {/* Header Row */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border-subtle bg-surface-card mb-3 shadow-2xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            <span className="font-mono text-xs font-semibold tracking-wider text-primary">
-              CURATED SHOWCASE // ARCHIVE
-            </span>
-          </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight">
             GALERI KEGIATAN
           </h2>
@@ -108,11 +101,10 @@ export default function Activities() {
           <button
             key={cat.id}
             onClick={() => setFilter(cat.id)}
-            className={`px-4 py-2 rounded-full font-heading text-xs font-semibold transition-all duration-200 active:scale-95 ${
-              filter === cat.id
-                ? "bg-primary text-white shadow-sm"
-                : "bg-surface-card border border-border-subtle text-on-surface-variant hover:border-primary/50 hover:text-on-surface"
-            }`}
+            className={`px-4 py-2 rounded-full font-heading text-xs font-semibold transition-all duration-200 active:scale-95 ${filter === cat.id
+              ? "bg-primary text-white shadow-sm"
+              : "bg-surface-card border border-border-subtle text-on-surface-variant hover:border-primary/50 hover:text-on-surface"
+              }`}
           >
             {cat.label}
           </button>
@@ -128,11 +120,10 @@ export default function Activities() {
             <div
               key={act.id}
               onClick={() => setSelectedActivity(act)}
-              className={`${
-                isWide
-                  ? "md:col-span-8 aspect-video md:aspect-21/10"
-                  : "md:col-span-4 aspect-4/5"
-              } group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border-subtle hover:border-primary flex flex-col justify-end bg-cta-banner cursor-pointer`}
+              className={`${isWide
+                ? "md:col-span-8 aspect-video md:aspect-21/10"
+                : "md:col-span-4 aspect-4/5"
+                } group relative rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border-subtle hover:border-primary flex flex-col justify-end bg-cta-banner cursor-pointer`}
             >
               {/* Background Photo */}
               <Image
@@ -175,9 +166,8 @@ export default function Activities() {
                   {act.badgeText}
                 </div>
                 <h3
-                  className={`font-heading font-extrabold text-white mb-2 leading-tight ${
-                    isWide ? "text-xl sm:text-2xl" : "text-lg sm:text-xl"
-                  }`}
+                  className={`font-heading font-extrabold text-white mb-2 leading-tight ${isWide ? "text-xl sm:text-2xl" : "text-lg sm:text-xl"
+                    }`}
                 >
                   {act.title}
                 </h3>

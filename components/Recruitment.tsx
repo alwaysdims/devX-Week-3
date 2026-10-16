@@ -57,7 +57,7 @@ export default function Recruitment() {
             <div className="w-28 sm:w-48 md:w-60 lg:w-72 aspect-4/3 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvCLw887HPPMbrkLWInmh43i0e5aTKo922wTFa28-bfvBg_mQtSBiG1hxP8ZoiiYg1FzCCZwQyOdi8z_KFcyJ02_97EsP5w28sCpO_Ud4AJlgEaaqEuNTVia4Hp1-maZm3z8tfSoFI3TTGOmjH-rV7_t9coWTFKaPuP30MPaKtljYKGth_yX_K5GLJpu7c6WUm2G2v_OhZWR15uVwHU9GNBl2Cq-aOhtYVteUrr8Kj7GkgjfsC-RrnCweexrsvOnsdB_E"
+                  src="/hero/main_hero.webp"
                   alt="Foto Bersama Komunitas ScreenShot"
                   fill
                   sizes="(max-width: 640px) 112px, (max-width: 768px) 192px, 288px"
@@ -72,7 +72,7 @@ export default function Recruitment() {
             <div className="w-32 sm:w-52 md:w-64 lg:w-80 aspect-16/10 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdawXCsouROIsdCfz2qmBn4RmggaJ4ljDwuh1T40ycYiwnxcGG0UH3EIYe4VdgayYmlVWiPCTvZdG-RlE6UtIBpqTk_0CLngHlIhmC86X0F5WUHVuxwfTng5h8mhS4pZvGJgWmDbRZzeWeDJJWU-Ru2Wa3wg4-fpEQyxabxDTrxUMBMy_ldAnX3UcBHjxut0nqtmQ36CyfH5x2q2wy5QR6MdAVFBhZ4AY6ssQ-c2Gv7pT2rL3JnOqqL8wwogdCRbRpRn8"
+                  src="/kegiatan/sidak_kata.webp"
                   alt="Sidak Kata Wawancara Spontan"
                   fill
                   sizes="(max-width: 640px) 128px, (max-width: 768px) 208px, 320px"
@@ -87,7 +87,7 @@ export default function Recruitment() {
             <div className="w-24 sm:w-40 md:w-52 lg:w-60 aspect-4/5 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD68_8jKI5-SOUBDvWrlFAJvA76aWRi5j0X4KkhNEbV2W6MBHESvkxX9vqyjY4M9fAgbNE6hlrRqtDJZf45hTERBt9UP4p-G7b3cuhu7la82QqTjNfiVNQWUqnkv3P4A8bLEDLYuDbX2VVto62_FpGXgWwQaIDEE6fwMYzMmX9xU5fOQ0dTqRdNoQBa9AkofgrbwbXn1bNNVOY_HnG9_hjbBBOzBTiUl9POiR7mU9-AqWsvOz8Jhc66QhZJefll3hOHvoA"
+                  src="/join_us/camera.webp"
                   alt="Divisi Pengurus Harian ScreenShot"
                   fill
                   sizes="(max-width: 640px) 96px, (max-width: 768px) 160px, 240px"
@@ -102,13 +102,6 @@ export default function Recruitment() {
         {/* 2. AREA TEKS TENGAH (JOIN US) DENGAN JARAK AMAN & TERBUKA PENUH          */}
         {/* ========================================================================= */}
         <div className="relative z-10 max-w-xl mx-auto flex flex-col items-center text-center px-4">
-          {/* Micro Pill */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 mb-4">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="font-mono text-xs font-bold text-primary tracking-wider uppercase">
-              OPEN RECRUITMENT // 2026
-            </span>
-          </div>
 
           {/* Headline Display */}
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-black text-on-surface tracking-tight uppercase leading-none mb-4">
@@ -143,7 +136,7 @@ export default function Recruitment() {
             <div className="w-24 sm:w-40 md:w-52 lg:w-60 aspect-4/5 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT_lqFK2FE1H7owAI5KLU5Rdd72NRZnTR1zAnWdqist_MztBKsXjOwdpeRfSUsZezFmQaAxR5qb4RZ3-40wcgTe5bc543mk9w-9-ezwojjY58zseEyKLu-Y72etRYGw6HvK-1Q16LKuCWPfgNE1tN3hJaSvcsc0pptdhQjyLkFwNct-z2YINVT9LKwvde_yqKaW-jpZojfpyMrKvfhPROrjDWHZ3Tjeez83OzLFk3TWqOojAhvP-aj7et_5zGVXExoR_k"
+                  src="/join_us/journalistik.webp"
                   alt="Divisi Jurnalistik ScreenShot"
                   fill
                   sizes="(max-width: 640px) 96px, (max-width: 768px) 160px, 240px"
@@ -158,7 +151,7 @@ export default function Recruitment() {
             <div className="w-32 sm:w-52 md:w-64 lg:w-80 aspect-16/10 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuALeWpRwwW-78vNVgycfRYZVDd2jvjyKBR0bjDoldM1xQw-SJTPC8SxJ9uNIsgZLJvwinmNdnLK2ls0aPa-ykQYE6P_zgAfIUr6BmdjpjZaPNX_wlghcebIrT7oSzk9a_IYSVaOIndc959dDXlXM3-tZYvqo742Dh4hn4tRJF8TliCKFW1vFJEyfTJ_D32sgx9E7neUN75thN3S61qC_K6R9wGnokDYhz-NjmJGYYBexiLnMyvjA28_fEzdF8czDcBCDUg"
+                  src="/join_us/selfie.webp"
                   alt="Divisi Fotografi dan Sinematografi ScreenShot"
                   fill
                   sizes="(max-width: 640px) 128px, (max-width: 768px) 208px, 320px"
@@ -173,7 +166,7 @@ export default function Recruitment() {
             <div className="w-24 sm:w-40 md:w-52 lg:w-60 aspect-4/5 rounded-2xl overflow-hidden border-2 border-white shadow-md p-1 sm:p-1.5 bg-surface-card-warm">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8--ybb5gYBT-tZ3wmvRrKZWGkBH435fiBnE6l_0Utqto3Sdz1JW9vnwvMeC0Et_6E_B0UGr6V-yz0Gf7W0p-TSypHmf3sD4_clFS7WUU1eT1C04bluGICf_dTEMaoetO1L015f0vBaasRkAACg8MuFAlq-wc_v1Q6aGGuID7tAaAFjcuFPvEOT-3_hnWd1uyHs_iI22VnO7oE_jp8MXvIsBoGe1h_z0okESVhk6sHtC-SxM4qzKjZGUTNwffs3ff2UOI"
+                  src="/join_us/expo.webp"
                   alt="Liputan Jurnalistik ScreenShot"
                   fill
                   sizes="(max-width: 640px) 96px, (max-width: 768px) 160px, 240px"

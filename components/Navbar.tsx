@@ -44,33 +44,28 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 border-b ${
-        scrolled
-          ? "bg-surface-canvas/95 backdrop-blur-md border-border-subtle shadow-xs"
-          : "bg-surface-canvas/85 backdrop-blur-sm border-border-subtle"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-200 border-b ${scrolled
+        ? "bg-surface-canvas/95 backdrop-blur-md border-border-subtle shadow-xs"
+        : "bg-surface-canvas/85 backdrop-blur-sm border-border-subtle"
+        }`}
     >
       <div className="flex items-center justify-between w-full px-6 md:px-12 max-w-7xl mx-auto h-16">
         {/* Left: Brand Logo & Status Indicator */}
         <div className="flex-1 flex items-center justify-start gap-3">
-          <Link href="#beranda" className="flex items-center group">
+          <Link href="#beranda" className="flex items-center">
             <div className="relative h-9 md:h-10 w-36 md:w-44 flex items-center">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtofKUYqMTn5--kgWDtsnqhw6MyD8r6V0lJFqSJMqWCicYkOoSGFatnHdkM0MZn0UqAA_r2bYcFyO4tIAmq8xobwa-F5AELeCfLp01PaI2_ySosG22qug97hksuzX0oh8egc1OsWEEbN8eAtUMPG_geODiwKN7J8ICG8CYbyTV6sjb_t4dQuliQ4sGxSHfSenjELHGO62AirV4Eq3W5oqxDYOqBzgEXc9FjATpd2ENaYxHIt5bcGqOj_NgZnmwmzC2Fy8"
+                src="/logo.png"
                 alt="SCREENSHOT - Multimedia & Journalistic of Computer Science"
                 fill
                 sizes="(max-width: 768px) 144px, 176px"
-                className="object-contain object-left shrink-0 transition-transform duration-150 group-hover:scale-105"
+                className="object-contain object-left shrink-0 transition-transform duration-150"
                 priority
               />
             </div>
           </Link>
 
-          {/* Monospace Status Indicator Badge [ONLINE] */}
-          <div className="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full border border-border-subtle bg-white/70 text-[11px] font-mono text-on-surface-variant">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-semibold tracking-wider">[ONLINE]</span>
-          </div>
+
         </div>
 
         {/* Center: Navigation Links (Desktop) */}
@@ -81,11 +76,10 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative font-heading text-sm py-1 font-semibold transition-colors duration-150 ${
-                  isActive
-                    ? "text-primary"
-                    : "text-on-surface-variant hover:text-primary"
-                }`}
+                className={`relative font-heading text-sm py-1 font-semibold transition-colors duration-150 ${isActive
+                  ? "text-primary"
+                  : "text-on-surface-variant hover:text-primary"
+                  }`}
               >
                 {item.label}
                 {isActive && (
@@ -140,13 +134,6 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {isOpen && (
         <div className="lg:hidden bg-surface-canvas border-b border-border-subtle px-6 py-4 space-y-3 shadow-md animate-in slide-in-from-top-2 duration-150">
-          <div className="flex items-center justify-between pb-2 border-b border-border-subtle/60 sm:hidden">
-            <span className="font-mono text-xs text-on-surface-variant flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              STUDIO STATUS: [ONLINE]
-            </span>
-            <span className="font-mono text-[10px] text-primary font-bold">BATCH 2026</span>
-          </div>
 
           {NAV_ITEMS.map((item) => {
             const isActive = activeSection === item.href.replace("#", "");
@@ -155,9 +142,8 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`block font-heading text-sm font-semibold py-1.5 transition-colors ${
-                  isActive ? "text-primary font-bold pl-2 border-l-2 border-primary" : "text-on-surface hover:text-primary"
-                }`}
+                className={`block font-heading text-sm font-semibold py-1.5 transition-colors ${isActive ? "text-primary font-bold pl-2 border-l-2 border-primary" : "text-on-surface hover:text-primary"
+                  }`}
               >
                 {item.label}
               </Link>

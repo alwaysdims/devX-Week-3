@@ -12,7 +12,7 @@ const LEADERS: LeaderItem[] = [
     role: "Ketua Umum ScreenShot 2026",
     period: "Periode 2026/2027",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCUH6gcsJb_wzCKVA_jGWkm9QxQrpvo1nxuFFr-_6luH3nrq1rA1HfqVH5dyHDKZkITh25qAbCxBHTreVqtzCD-xQrpTIVvsKSP-8yerbgTTjzgby0PQakp1BPG43yAiUfGXVSYIASgLHHnZt3bD04n8oHLtxRRklnDZsFzTv3Uxn1-NzTvgOL1te0pIKN8_dG6MlSuEeWcyHxggSOy_n1KlOJLUyaejTampFgixb3iP-pQyT83TS4IZ1f7Hx48VT1w7rA",
+      "/kepengurusan/ketua.webp",
     quote: "Menjadikan ScreenShot sebagai episentrum kreativitas visual dan jurnalisme bermartabat di Ilkom UNNES.",
   },
   {
@@ -21,7 +21,7 @@ const LEADERS: LeaderItem[] = [
     role: "Wakil Ketua Umum ScreenShot 2026",
     period: "Periode 2026/2027",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuABJBMg1BWKFF_7ub2FEdPT0fhCNXPkLlD1uqR-TjQQBZL4WTfTYDU7GvYodvWlZcUp6x3360tr78o0B7_yJP6JzXyL6LU4cJDA9FvlV9OTBUR7hI6YQaMUlG3e95jdeGIa4tw_oZlmBzKLXOSpXpFh427HnBRsOQS5qW7XDznB9rAvKYKa3sl_JXjb95wGobqpzT12aJXDmunYp5WV2faMfrAGO0MGBkZs5TqrqbPpKcj96mG2E2tEjfSWfWc7Kb6ACUk",
+      "/kepengurusan/wakil.webp",
     quote: "Merajut sinergi antar divisi demi karya multimedia yang berdampak dan menginspirasi generasi.",
   },
 ];
@@ -39,7 +39,7 @@ const DIVISIONS: DivisionItem[] = [
     head: "BPH & Sekretariat",
     focus: "Governance & Partnership",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA589Pzgn9d5tkywUSsEgUHuW073hPHBC1YehRu2Y10hxVl7vr3As9myacuisogtHz7FTxlltbPRpAJ-L2vPZ_wv-gQKL8rBUCwUkchihZPy02nNAgaltirzxfhPTJQU4I69iW4PRSvel5JHHNVEPTptUmFls_YL1NpMHOOD8H7O_kbJOz9glogkfmMA8rFbmdSOyed20zKCK6Qwp_4gYqEvSqm411H_yM_ug05TQ5jutG7jeHTqmA3SBzmn4fZcU0wmFo",
+      "/kepengurusan/ph.webp",
   },
   {
     id: "jurnalistik",
@@ -53,7 +53,7 @@ const DIVISIONS: DivisionItem[] = [
     head: "Koordinator Jurnalistik",
     focus: "Investigasi & Storytelling",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAPewdp_ItkULN4sz50jOCIrHKgHPWo-R5XCjn88TAnTgN2lD4-le5CdMQ1C_7Ax11yBr1TsbTx-mP2dF_by9B4OYcxOol_73lgq5DbKf7EJ_FNiviq83vJWLBbWRL39YVzXADGkOS45ZGEf5NJyuSujn32syZWtrWWI00jvP-PztBSN3RT4CwqEq1gvImRRJKA9X74MTtT-GC-LLEEMnZXN703pID_RVvyOFqb33y5--YLLIM0UzWTEZlAR6rcD-xzUcI",
+      "/kepengurusan/jurnalistik.webp",
   },
   {
     id: "fotosin",
@@ -67,7 +67,7 @@ const DIVISIONS: DivisionItem[] = [
     head: "Koordinator Fotosin",
     focus: "Visual Motion & Stills",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBAYMJrluSHMoUZAirQBDu2RULV5qveQpT0-XU6tEY2YqHBveDSYNAhX1oMIfzRo6CfcpOQ_dl0l5PPzyXU3QSTBmR2dufHQ86ueKwY2SONeW3sG8xhslMgWqFBy5kmGKTTfysQp_0fvvAvWXKnAhci9H7y_GJfZ659um1rpSCBursxbPQXohamzi3FcMdozwesJ7n5hNFGe47mpnLGSN8uDS0dOWQhKjDQqLBN2y0a_0kmgKJMo_LruDgo0Hrap4eflMw",
+      "/kepengurusan/fotosin.webp",
   },
   {
     id: "dkv",
@@ -81,7 +81,7 @@ const DIVISIONS: DivisionItem[] = [
     head: "Koordinator DKV",
     focus: "Visual Graphic & Layout",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuADYtvMEb5EBPAoZ7_icFemibmBaFQ9btpruwZn5uIN1It64FaVT4si19B08iEdXHqsBqarzdAEcNxyCPMtkDjSgYDYRM8c9w7rG4S5eEsClCs4k_OkG3iiu-nwjCPXcMpE1a3RsW6XwHkaRq_FBw93Iz3_AKUSf5ywoSofVbjiZpjJDd9OhBEC8mp6vBjfzx9Q3FcItC4FtpuqWoqApZeOAfvxkH34Cecn2KkA1i3v07njAcDEK7UQ2PNgs238Hf3IEfk",
+      "/kepengurusan/dkv.webp",
   },
 ];
 
@@ -109,12 +109,6 @@ export default function Organization() {
       {/* Header Row */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 relative z-10">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border-subtle bg-surface-card/80 mb-3 shadow-2xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-            <span className="font-mono text-xs font-semibold tracking-wider text-primary">
-              GOVERNANCE // 2026_TIER
-            </span>
-          </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
             STRUKTUR ORGANISASI
           </h2>
@@ -336,11 +330,10 @@ export default function Organization() {
                 onMouseEnter={() => setHoveredDivision(idx)}
                 onMouseLeave={() => setHoveredDivision(null)}
                 onClick={() => setSelectedDivision(div)}
-                className={`group relative rounded-2xl overflow-hidden shadow-md border transition-all duration-300 p-2.5 bg-surface-card flex flex-col cursor-pointer ${
-                  hoveredDivision === idx
-                    ? "border-primary -translate-y-2 shadow-xl ring-2 ring-primary/10"
-                    : "border-border-subtle hover:border-primary hover:-translate-y-1.5"
-                }`}
+                className={`group relative rounded-2xl overflow-hidden shadow-md border transition-all duration-300 p-2.5 bg-surface-card flex flex-col cursor-pointer ${hoveredDivision === idx
+                  ? "border-primary -translate-y-2 shadow-xl ring-2 ring-primary/10"
+                  : "border-border-subtle hover:border-primary hover:-translate-y-1.5"
+                  }`}
               >
                 {/* Photo Container */}
                 <div className="relative aspect-4/5 w-full overflow-hidden rounded-xl bg-surface-container mb-3">

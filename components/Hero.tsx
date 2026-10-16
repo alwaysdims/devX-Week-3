@@ -19,15 +19,6 @@ export default function Hero() {
       />
 
       <div className="flex flex-col items-start max-w-4xl relative z-10">
-        {/* Status Pill with Pulsing Red Dot */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-border-subtle bg-surface-card mb-6 shadow-xs hover:border-primary transition-colors duration-200">
-          <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
-          <span className="font-mono text-xs font-semibold tracking-wide text-on-surface">
-            BATCH_2026 // OPEN_STUDIO
-          </span>
-          <span className="w-1 h-1 rounded-full bg-border-subtle" />
-          <span className="font-mono text-[11px] text-primary font-semibold">HIMA ILKOM UNNES</span>
-        </div>
 
         {/* Display Headline */}
         <h1 className="hidden md:block font-heading text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-on-surface tracking-tight mb-6 leading-[1.12]">
