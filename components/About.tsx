@@ -10,7 +10,7 @@ export default function About() {
           <div className="relative w-full rounded-2xl bg-cta-banner border border-[#323123] shadow-xl group overflow-hidden">
             <div className="relative w-full aspect-video md:aspect-21/10 overflow-hidden">
               <Image
-                src="/hero/main_hero.webp"
+                src="/hero/main_hero1.webp"
                 alt="Foto Bersama Komunitas ScreenShot UNNES"
                 fill
                 sizes="(max-width: 1280px) 100vw, 1280px"

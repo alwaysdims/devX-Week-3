@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "DKV",
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
