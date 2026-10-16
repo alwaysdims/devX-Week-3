@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ScreenShot UNNES — Multimedia & Journalistic of Computer Science",
+  title: "ScreenShot UNNES",
   description:
     "Wadah mahasiswa Ilmu Komputer UNNES fokus di bidang multimedia — fotografi, sinematografi, desain grafis, dan jurnalistik. Write, Camera, Action, Semangat Berkarya!!",
   keywords: [
