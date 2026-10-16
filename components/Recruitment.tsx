@@ -171,29 +171,20 @@ export default function Recruitment() {
             </button>
 
             <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B192C] tracking-tight mb-4 leading-tight">
-              Registration is now closed!
+              Pendaftaran telah ditutup!
             </h3>
 
             <p className="font-body text-sm sm:text-base text-[#334155] leading-relaxed max-w-lg mx-auto">
-              Follow our Instagram accounts{" "}
+              Ikuti akun Instagram kami{" "}
               <a
-                href="https://instagram.com/codelinesunnes.dev"
+                href="https://www.instagram.com/screenshotilkom"
                 target="_blank"
                 rel="noreferrer"
                 className="font-bold text-[#134E4A] hover:underline"
               >
-                @codelinesunnes.dev
+                @screenshotilkom
               </a>{" "}
-              and{" "}
-              <a
-                href="https://instagram.com/ukmriptekunnes"
-                target="_blank"
-                rel="noreferrer"
-                className="font-bold text-[#134E4A] hover:underline"
-              >
-                @ukmriptekunnes
-              </a>{" "}
-              so you don’t miss updates about the next registration batch and other exciting events from Codelines.
+              agar kamu tidak ketinggalan informasi mengenai gelombang pendaftaran selanjutnya dan berbagai acara menarik lainnya.
             </p>
           </div>
         </div>
