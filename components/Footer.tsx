@@ -1,9 +1,22 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
+    toggleVisibility();
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -127,20 +140,36 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Scroll to Top */}
+        {/* Bottom Bar: Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-on-surface-variant">
           <p>&copy; 2026 ScreenShot UNNES. All rights reserved.</p>
-
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-subtle bg-surface-card text-on-surface hover:text-primary hover:border-primary transition-all duration-150 active:scale-95 shadow-2xs cursor-pointer"
-          >
-            <span>Kembali ke Atas</span>
-            <span>&uarr;</span>
-          </button>
         </div>
       </div>
+
+      {/* Floating Scroll to Top */}
+      <button
+        type="button"
+        onClick={scrollToTop}
+        aria-label="Kembali ke Atas"
+        className={`fixed bottom-6 right-6 z-40 flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white hover:bg-primary-hover shadow-lg shadow-primary/25 transition-all duration-300 hover:-translate-y-1 active:scale-95 cursor-pointer ${
+          isVisible ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"
+        }`}
+      >
+        <svg
+          className="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2.5}
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+      </button>
     </footer>
   );
 }
